@@ -1,0 +1,35 @@
+header {
+    height: 34px;
+    background: darkgray;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 0 0 12%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    flex: 0 0 60%;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.login-user {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    padding: 4px 12px;
+}
