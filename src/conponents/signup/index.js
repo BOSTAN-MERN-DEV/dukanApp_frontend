@@ -1,25 +1,23 @@
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
-import { loginUser } from "../../redux/slices/user/thunk";
+import { userSignup } from "../../redux/slices/user/thunk";
 
-export const Login = () => {
+export const Singup = () => {
     const dispatch = useDispatch();
 
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
         debugger
-        console.log("inside submit", data)
-        dispatch(loginUser(data));
-        console.log("after dispatch")
+        dispatch(userSignup(data));
     };
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            {/* <div>
+            <div>
                 <label htmlFor="customer_name">Name</label>
                 <input type="text" placeholder="Enter your name" {...register("customer_name", { required: true })} />
-            </div> */}
+            </div>
 
             <div>
                 <label htmlFor="customer_email">Email</label>
