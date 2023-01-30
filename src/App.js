@@ -10,6 +10,9 @@ import { Contact } from './conponents/contact';
 import { NotFound } from './conponents/notFound';
 import { Login } from './conponents/login';
 import { Singup } from './conponents/signup';
+import { Order } from './conponents/order';
+// import { Order } from './conponents/order';
+
 
 function App() {
 
@@ -26,11 +29,15 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+
       <h1>User Signup</h1>
       <Singup />
 
       <h1>Login User</h1>
       <Login />
+
+      <div>Order List</div>
+      <Order />
     </div>
   );
 }

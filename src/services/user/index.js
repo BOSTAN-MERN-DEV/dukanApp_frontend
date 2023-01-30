@@ -9,7 +9,7 @@ export class UserService extends RestFulService {
             const response = await this.post(url, data);
             return genericResponse(response);
         } catch (error) {
-            return prepareGenericResponse(error);
+            return genericResponse(error);
         }
     };
 
