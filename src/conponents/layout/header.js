@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import "./header.css"
-
+// import "./header.css"
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 export const Header = () => {
     const dukanAppNav = [
@@ -12,20 +13,35 @@ export const Header = () => {
     ]
 
     return (
-        <header>
-            <div className="logo">Logo</div>
+        <Navbar bg="dark" variant="dark">
+            {/* <Navbar.Brand href="#home"> */}
+            <img src={`${process.env.PUBLIC_URL}/assets/images/app-logo.svg`} width="30" height="30"
+                className="d-inline-block m-3" alt="Dukan App logo"
+            />
 
-            <nav>
-                <ul>
-                    {
-                        dukanAppNav.map((link, key) => {
-                            return <li key={key}>{link}</li>
-                        })
-                    }
-                </ul>
-            </nav>
+            <Nav className="link">{dukanAppNav.map((item, key) => <Nav.Link>{item}</Nav.Link>)}</Nav>
 
-            <div className="login-user">LoginUser</div>
-        </header>
+            {/* <Nav className="me-auto">
+                        
+                        {dukanAppNav.map((tiem, key) => <Nav.Link key={key}> {item}</Nav.Link>)}
+                    </Nav> */}
+            {/* </Navbar.Brand> */}
+        </Navbar>
+
+        // <header>
+        //     <div className="logo">Logo</div>
+
+        //     <nav>
+        //         <ul>
+        //             {
+        //                 dukanAppNav.map((link, key) => {
+        //                     return <li key={key}>{link}</li>
+        //                 })
+        //             }
+        //         </ul>
+        //     </nav>
+
+        //     <div className="login-user">LoginUser</div>
+        // </header>
     );
 }
