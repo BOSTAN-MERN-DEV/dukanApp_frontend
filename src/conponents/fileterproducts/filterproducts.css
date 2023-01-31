@@ -1,0 +1,58 @@
+.body{
+    background: none;
+}
+.box-sidebar{
+    width: 100%;
+    border:  1px solid #999;
+    border-bottom: none;
+    margin-top: 16px;
+}
+.box-sidebar h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-filter{
+    width: 100%;
+    border: 1px solid #999;;
+}
+.box-filter h5{
+    margin: 40px 0 5px 20px;
+}
+.list-item{
+    list-style: none;
+    margin-left: 20px;
+}
+.price-input{
+    width: 100%;
+    display: flex;
+    margin: 18px 0px 18px 0px;
+}
+.price-input .field {
+    height: 38px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    margin-left: 12px;
+    font-size: 19px;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+.currency{
+    font-size: 15px;
+}
+.price-input .separator{
+    width: 40px;
+    display: flex;
+    font-size: 19px;
+    align-items: center;
+    justify-content: center;
+}
+
+  

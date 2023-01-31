@@ -1,0 +1,50 @@
+/* 
+  
+  .product-image {
+    margin-top: 4px;
+    width: 85%;
+    height: 11em;
+    display: flex;
+    object-fit: cover;
+    margin-left: 15px;
+  }
+  
+  .card {
+    margin-top: 2 px;
+    border: 1px solid #25b867;
+    width: 95%;
+    margin:5px;
+    font-family: arial;
+  }
+  .title {
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.title p{
+    margin-top: -15px;
+}
+.title p span{
+    color: #25b867
+}
+  
+  .card button {
+    border: none;
+    border-radius: 18px;
+    outline: 0;
+    padding: 12px;
+    color: #fd9136;
+    border:2px solid #fd9136;
+    text-align: center;
+    cursor: pointer;
+    width: 75%;
+    font-size: 12px;
+    padding: 7px 14px;
+    background-color: transparent;;
+  }
+  
+  .card button:hover {
+    color: white;
+    background-color: #fd9136;
+    
+  }
+   */

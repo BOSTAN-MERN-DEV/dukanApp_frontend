@@ -1,0 +1,25 @@
+.banner-inner-two{
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.banner-inner-img{
+    width: 100%;
+}
+.banner-two-title{
+    width: 500px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 37px;
+    left: 60%;
+    font-size: 29px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: Nunito Sans, sans-serif;
+}
+.banner-inner-img:hover{
+    transform: scale(1.05);
+    transition: all .9s ease 0s;
+}

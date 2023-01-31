@@ -1,0 +1,32 @@
+.pagination-box{
+    width: 98%;
+
+}
+.pagination-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+
+.page-item a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: #ddd;
+    color: black;
+    border-radius: 18px;
+    font-weight: 400px;
+    cursor: pointer;
+} 
+.page-item a.active{
+    background-color: #fd9136;
+    color: #ddd;
+
+}
+.page-item a:hover:not(.active){
+    background-color: #fd9136;
+    color: #ddd;
+}
