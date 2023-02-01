@@ -1,2 +1,3 @@
-import { productReducer } from "./product";
-import { categoryReducer } from "./category";
+export { productReducer } from "./product";
+export { categoryReducer } from "./category";
+export { userReducer } from "./user";

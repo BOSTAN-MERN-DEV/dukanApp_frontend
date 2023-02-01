@@ -9,8 +9,11 @@ import { Category } from './conponents/category';
 import { About } from './conponents/about';
 import { Contact } from './conponents/contact';
 import { NotFound } from './conponents/notFound';
+import { Login } from './conponents/login';
+import { Singup } from './conponents/signup';
 
 function App() {
+
   return (
     <div>
       <Routes>
@@ -25,6 +28,11 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+      <h1>User Signup</h1>
+      <Singup />
+
+      <h1>Login User</h1>
+      <Login />
     </div>
   );
 }
