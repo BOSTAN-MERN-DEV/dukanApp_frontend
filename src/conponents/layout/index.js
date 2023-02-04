@@ -1,10 +1,14 @@
+import { Navbar } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import { Outlet } from "react-router-dom";
 import { Header } from "./header";
+import { SearchBar } from './searchbar';
+
 
 export const Layout = () => {
     return (
         <Container fluid>
+            <SearchBar/>
             <Header />
             <main>
                 <Outlet />

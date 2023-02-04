@@ -8,6 +8,11 @@ import { Category } from './conponents/category';
 import { About } from './conponents/about';
 import { Contact } from './conponents/contact';
 import { NotFound } from './conponents/notFound';
+import { Login } from './conponents/login';
+import { Singup } from './conponents/signup';
+import { OrderConfirmation } from './conponents/orderconfirmation';
+
+
 // import { Login } from './conponents/login';
 // import { Singup } from './conponents/signup';
 // import { Order } from './conponents/order';
@@ -37,7 +42,8 @@ function App() {
 
 
     // <div className='container'>
-    <Routes>
+<>
+<Routes>
       <Route path='/' element={<Layout />}>
         <Route index element={<Home />} />
         <Route index path='/home' element={<Home />} />
@@ -46,8 +52,15 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
+        
       </Route>
     </Routes>
+
+    <Login />
+    <Singup/>
+    <OrderConfirmation/>
+
+</>
 
     //   <h1>User Signup</h1>
     //   <Singup />
