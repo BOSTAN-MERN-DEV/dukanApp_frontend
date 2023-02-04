@@ -1,0 +1,19 @@
+.total{
+    word-spacing: 20px;
+}
+.instruction{
+    width: 40%;
+}
+.subtotal{
+    width: 40%;
+}
+span .spn{
+    color: orange;
+}
+.plus{
+    font-size: 22px;
+    color: black;
+}
+.text-warning{
+    color: orange;
+}

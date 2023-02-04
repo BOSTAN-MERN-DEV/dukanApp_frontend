@@ -1,35 +1,166 @@
-header {
-    height: 34px;
-    background: darkgray;
+header{
     display: flex;
-    align-items: center;
 }
-
-.logo {
-    flex: 0 0 12%;
-    height: 100%;
+.logo li {
+    list-style: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 30px;
+    font-size: 18px;
+    color: white;
+    background: orange;
+    border: none;
+    margin-top: -4px;
+}
+.logo li:hover{
+background-color: rgb(226, 175, 81);
+}
+nav{
+width: 50%;
+}
+nav ul{
     display: flex;
-    align-items: center;
+    justify-content: space-around;
 }
+nav ul li{
+    list-style: none;
 
-nav {
-    flex: 0 0 60%;
 }
-
-ul {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style-type: none;
-}
-
-.login-user {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-a {
+nav ul li a{
     text-decoration: none;
-    padding: 4px 12px;
+    color: black;
+    font-size: 18px;
+font-weight: 600;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: orange; 
+}
+.search-btn{
+    width: 450px;
+    border-radius: 20px;
+border: 1px solid lightgray;
+}
+.search-btn input{
+width: 400px;
+padding: 0px 0px 0px 25px;
+border: none;
+border-radius:20px 0px 0px 20px;
+border: none;
+}
+.search-btn button{
+background-color: orange;
+border: none;
+border-radius: 20px;
+padding: 10px 30px;
+color: #ffff;
+}
+.my-account a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.my-account a:hover{
+color: orange;
+}
+
+form{
+  width:40%;
+  margin: auto;
+  border: 1px solid rgb(206, 202, 202);
+  padding: 25px;
+}
+form h3{
+    text-align: center;
+}
+.login-form {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+.login-form button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 12px;
+}
+.forgot-password a{
+    text-decoration: none;
+    color: black;
+}
+.forgot-password a:hover{
+    color: orange;
+}
+.fa-shopping-cart{
+    color: black;
+}
+.cart-shop :hover{
+    color: orange;
+
+}
+.useraccount {
+    display: flex;
+    width: 27%;
+    justify-content: space-around;
+}
+
+/* Media Query CSS */
+
+@media only screen and (max-width: 992px) and (min-width: 300px)  {
+    /* li.cart-shop {
+        width: 70%;
+        margin-top: 20px;
+    } */
+    .search-btn {
+        margin-top: 30px;
+        width: 100%;
+        border-radius: 20px;
+        border: 1px solid lightgray;
+    }
+    li.nav {
+        width: 100%;
+    }
+    img.rounded {
+        width: 100%;
+        height: 100px;
+    }
+    .search-btn input {
+        width: 600px;
+    }
+    .my-account{
+        margin-top: 30px;
+    }
+    .useraccount {
+        display: flex;
+        justify-content: space-between;
+        width: 43%;
+       
+        margin-top: 30px;
+    }
+    .logo {
+        display: none;
+    }
+    nav {
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    
+    li.nav {
+        width: 100%;
+    }
+    img.rounded {
+        width: 100%;
+        
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    
 }

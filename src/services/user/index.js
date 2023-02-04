@@ -5,7 +5,7 @@ export class UserService extends RestFulService {
     //REGISTER USER
     signup = async data => {
         try {
-            const url = `${restApiEndPoint.SIGNUP}`;
+            const url = `${restApiEndPoint.SIGNUP}`;//localhost:8000/api/user
             const response = await this.post(url, data);
             return genericResponse(response);
         } catch (error) {
