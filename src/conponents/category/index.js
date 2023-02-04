@@ -38,26 +38,28 @@ export const Category =()=>{
                 </div>
             </div>
         </section>
+        
          <div className='container-fluid '>
-        <div className='inner-container' >
-            <div className='row'>
-                <div className='col-3'>
-                <Filterproducts/>
-                </div>
-                <div className='col-9'>
-                    <div className='row'>
-                        <h1>hjkdhdgkh</h1>
+            <div className='inner-container' >
+                <div className='row'>
+                    <div className='col-3'>
+                        <Filterproducts/>
                     </div>
-                    <div className='row'>
-                    <Allproducts/>
-                    </div>
+
+                     <div className='col-9'>
                         <div className='row'>
-                         <Pagination/>
-                         </div>
+                            <h1>hjkdhdgkh</h1>
+                        </div>
+                        <div className='row'>
+                        <Allproducts/>
+                        </div>
+                            <div className='row'>
+                            <Pagination/>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
    
     </>
   )

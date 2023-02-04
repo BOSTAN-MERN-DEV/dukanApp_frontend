@@ -8,7 +8,7 @@ export const Allproducts =()=>{
         const data = await res.json();
         setproducts(data.products);
     }
-    console.log(products)
+    // console.log(products)
     useEffect(()=>{
         allproduct();
     },[])

@@ -23,6 +23,11 @@
     list-style: none;
     margin-left: 20px;
 }
+.hover-check:hover{
+    color: #fc9135;
+    cursor: pointer;
+}
+  
 .price-input{
     width: 100%;
     display: flex;
